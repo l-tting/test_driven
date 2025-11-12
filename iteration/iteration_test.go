@@ -1,0 +1,13 @@
+package iterate
+
+import "testing"
+
+func TestIterate(t *testing.T) {
+	repeated := Repeat("a")
+	expected := "aaaaa"
+
+	if repeated != expected {
+		t.Errorf("wanted %q but got %q", expected, repeated)
+	}
+
+}
